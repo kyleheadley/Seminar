@@ -4,7 +4,7 @@ use std::default::Default;
 use animal::Animal;
 
 pub trait Mammilian {
-	fn hair(&self) -> &String;
+	fn hair(&self) -> String;
 }
 
 pub struct Mammal {
@@ -31,8 +31,8 @@ impl Mammal {
 }
 
 impl Mammilian for Mammal {
-	fn hair(&self) -> &String {
-		&self.hairstyle
+	fn hair(&self) -> String {
+		format!("{}", self.hairstyle)
 	}
 }
 

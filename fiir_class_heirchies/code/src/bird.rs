@@ -4,7 +4,7 @@ use std::default::Default;
 use animal::Animal;
 
 pub trait Avian {
-	fn eggs(&self) -> &String;
+	fn eggs(&self) -> String;
 }
 
 pub struct Bird {
@@ -31,8 +31,8 @@ impl Bird {
 }
 
 impl Avian for Bird {
-	fn eggs(&self) -> &String {
-		&self.eggs
+	fn eggs(&self) -> String {
+		format!("{}", self.eggs)
 	}
 }
 

@@ -25,6 +25,31 @@ impl Cat {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // impl Deref for Cat {
 // 	type Target = Animal;
 // 	fn deref(&self) -> &Self::Target {
