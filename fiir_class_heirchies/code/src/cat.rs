@@ -1,8 +1,10 @@
+#[allow(unused_imports)]
 use std::ops::Deref;
 use std::default::Default;
 
 use animal::Animal;
 
+#[allow(dead_code)]
 pub struct Cat {
 	animal: Animal,
 	sound: String,
@@ -23,9 +25,9 @@ impl Cat {
 	}
 }
 
-impl Deref for Cat {
-	type Target = Animal;
-	fn deref(&self) -> &Self::Target {
-		&self.animal
-	}
-}
+// impl Deref for Cat {
+// 	type Target = Animal;
+// 	fn deref(&self) -> &Self::Target {
+// 		&self.animal
+// 	}
+// }

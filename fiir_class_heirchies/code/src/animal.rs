@@ -22,7 +22,7 @@ impl Animal {
 		}
 	}
 
-	pub fn what(&self) {
+	pub fn what_is_it(&self) {
 		println!("{}", self.lifeform);
 	}
 	pub fn speak(&self) {
